@@ -136,7 +136,6 @@ public static void novaTransacao() {
             Double valorSaque = input.nextDouble();
 
             conta.sacar(valorSaque);
-            System.out.println("--- Saque realizado com sucesso! ---");
         }else {
             System.out.println("--- Conta não encontrada ---");
         }
