@@ -58,7 +58,21 @@ public class Banco {
                 break;
         }
     }
+public static void novaTransacao() {
 
+        System.out.println("\nDeseja fazer uma nova transação? (Digite 'sim' ou 'nao')");
+        String resposta = input.next();
+
+        if (resposta.equalsIgnoreCase("sim")) {
+            operacoes(); 
+        } else if (resposta.equalsIgnoreCase("nao")) {
+            System.out.println("Obrigado por usar nossos serviços. Até mais!");
+            System.exit(0); 
+        } else {
+            System.out.println("Opção inválida!");
+            novaTransacao(); 
+        }
+    }
     public static void criarConta() {
     
         System.out.println("\nNome: ");
