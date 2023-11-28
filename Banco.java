@@ -91,7 +91,7 @@ public static void novaTransacao() {
         contasBancarias.add(conta);
         System.out.println("-> Sua conta foi criada com sucesso!");
 
-        operacoes();
+       novaTransacao();
 
     }
 
@@ -121,7 +121,7 @@ public static void novaTransacao() {
             System.out.println("--- Conta não encontrada ---");
         }
 
-        operacoes();
+       novaTransacao();
 
     }
 
@@ -141,7 +141,7 @@ public static void novaTransacao() {
             System.out.println("--- Conta não encontrada ---");
         }
 
-        operacoes();
+       novaTransacao();
 
     }
 
@@ -170,7 +170,7 @@ public static void novaTransacao() {
         }else {
             System.out.println("--- Conta para transferência não encontrada ---");
         }
-        operacoes();
+        novaTransacao();
     }
 
     public static void listarContas() {
@@ -182,6 +182,6 @@ public static void novaTransacao() {
             System.out.println("--- Não há contas cadastradas ---");
         }
 
-        operacoes();
+        novaTransacao();
     }
 }
