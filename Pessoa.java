@@ -46,4 +46,5 @@ public class Pessoa {
         return  "\nName: " + this.getName() +
                 "\nCPF: " + this.getCpf() +
                 "\nEmail: " + this.getEmail();
-    }}
+    }
+}
